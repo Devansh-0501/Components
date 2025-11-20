@@ -1,0 +1,9 @@
+.carousel{
+    display: flex;
+    align-items: center;
+}
+
+.arrow{
+    width: 2rem;
+    cursor: pointer;
+}

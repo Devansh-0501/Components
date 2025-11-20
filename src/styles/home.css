@@ -1,0 +1,124 @@
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  color: #222;
+}
+
+.home h1 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+/* Pagination row */
+.pages {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+/* used for both button and page-number div */
+.singlePageNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  user-select: none;
+  transition: all 160ms ease;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+/* hover for clickable items (divs won't have :hover effect if disabled via logic) */
+.singlePageNumber:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* active page highlight */
+.singlePageNumber.active {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 6px 18px rgba(79,70,229,0.18);
+}
+
+/* disabled state for real <button disabled> elements */
+.singlePageNumber[disabled],
+.singlePageNumber:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Each product wrapper */
+.product-display {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-display:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+}
+
+/* product card content */
+.container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* image styling */
+.container img {
+  width: 100%;
+  max-width: 160px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* title */
+.container span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

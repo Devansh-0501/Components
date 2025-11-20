@@ -1,0 +1,17 @@
+
+.accordian {
+  border: solid 2px;
+
+  width: 30rem;
+}
+.accordianItem {
+  margin: 5px;
+  border: solid 1px;
+}
+.title {
+  cursor: pointer;
+  background: rgb(198, 190, 190);
+}
+.body {
+  background: light grey;
+}

@@ -1,0 +1,47 @@
+.progressBar {
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+
+/* Input & button row */
+.progressBar input {
+  padding: 10px;
+  width: 140px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.progressBar button {
+  padding: 10px 14px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.progressBar button:hover {
+  background: #2b85c7;
+}
+
+/* Progress Bar */
+.pro {
+  margin-top: 20px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
