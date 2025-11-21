@@ -9,6 +9,7 @@ import NestedComments from "./components/NestedComments"
 import StarRating from "./components/StarRating"
 import Todo from "./components/Todo"
 import ProgressBar from "./components/ProgressBar"
+import AutoSearch from "./components/AutoSearch"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/StarRating" element={<StarRating/>}/>
           <Route path="/Todo" element={<Todo/>}/>
           <Route path="/ProgressBar" element={<ProgressBar/>}/>
+          <Route path="/AutoSearch" element={<AutoSearch/>}/>
       </Routes>
     </div>
     </BrowserRouter>

@@ -1,0 +1,21 @@
+.autoSearch{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+   
+
+}
+.input{margin: 0;}
+
+
+
+.autoSearch h1{
+    margin-bottom: 1rem;
+}
+
+.single-search{
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(236, 241, 240);
+}

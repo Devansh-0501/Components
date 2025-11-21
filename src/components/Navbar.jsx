@@ -13,6 +13,7 @@ const Navbar = () => {
       <Link to={"/StarRating"}>StarRating</Link>
       <Link to={"/Todo"}>Todo</Link>
       <Link to={"/ProgressBar"}>ProgressBar</Link>
+      <Link to={"/AutoSearch"}>AutoSearch</Link>
     </div>
   )
 }

@@ -9,15 +9,14 @@ export default function ProgressBar() {
   useEffect(() => {
     if (time >= 0) {
       console.log(time);
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setWidthh((prev) => prev + 100 / value);
         setTime((time) => time - 1);
       }, 1000);
+      return () => {
+        clearTimeout(timer);
+      };
     } else setWidthh(0);
-
-    return ()=>{
-        clearTimeout();
-    }
   }, [time]);
 
   const handleClick = () => {
@@ -26,20 +25,19 @@ export default function ProgressBar() {
   };
 
   return (
-    
-      <div className="progressBar">
-        <input
-          type="number"
-          placeholder="setTime"
-          value={value}
-          onChange={(e) => setValue(Number(e.target.value))}
-        />
-        <button onClick={handleClick}>go</button>
-       
-          
-          <div className="pro" style={{ width: `${widthh}%` }}>  {Math.floor(widthh)} </div>
-   
+    <div className="progressBar">
+      <input
+        type="number"
+        placeholder="setTime"
+        value={value}
+        onChange={(e) => setValue(Number(e.target.value))}
+      />
+      <button onClick={handleClick}>go</button>
+
+      <div className="pro" style={{ width: `${widthh}%` }}>
+        {" "}
+        {Math.floor(widthh)}{" "}
       </div>
- 
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 .navbar{
     width: 100%;
-background-color: rgb(227, 247, 247);
+background-color: #020c31;
 padding: 1.5rem;
 display: flex;
 align-items: center;
@@ -11,4 +11,5 @@ justify-content: space-evenly;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 700;
+    color: rgb(13, 127, 249);
 }
